@@ -1,4 +1,4 @@
-package com.android.apotekku.Adapter
+package com.android.apotekku.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -17,12 +17,12 @@ class AdapterProduk(var data: ArrayList<Produk>):RecyclerView.Adapter<AdapterPro
         val imgObat = view.findViewById<ImageView>(R.id.img_obat)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdapterProduk.Holder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_produk, parent, false)
         return Holder(view)
     }
 
-    override fun onBindViewHolder(holder: AdapterProduk.Holder, position: Int) {
+    override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.tvNama.text = data[position].nama
         holder.tvHarga.text = data[position].harga
         holder.imgObat.setImageResource(data[position].gambar)
