@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+    
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang di"/>
+
+        <TextView
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ApotekKu"/>
+        
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_width="250dp"
+            android:layout_height="190dp"
+            android:src="@drawable/img_login"/>
+        
+        <Button
+            android:id="@+id/btn_prosesLogin"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:text="Masuk"/>
+
+        <Button
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:text="Daftar"/>
+        
+    </LinearLayout>
+        
+
+</RelativeLayout>
