@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity">
+    
+    
+    <LinearLayout
+        android:layout_marginHorizontal="15dp"
+        android:paddingHorizontal="15dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_account_circle_24"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_namaLengkap"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:hint="Nama Lengkap"
+                        android:singleLine="true"
+                        android:inputType="text"
+                        android:maxLines="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CACACA"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/outline_alternate_email_24"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:hint="Email"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CACACA"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phone_android_24px"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_nomor"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:hint="Nomor Telepon"
+                        android:singleLine="true"
+                        android:inputType="phone"
+                        android:maxLines="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CACACA"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/key_24px"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:passwordToggleEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:hint="Password"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:maxLines="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CACACA"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Register"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:background="#CACACA"/>
+
+            <TextView
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atau masuk dengan"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:background="#CACACA"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_google"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp">
+            
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_google48"/>
+            
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google"
+                android:textColor="@color/black"/>
+
+
+
+
+        </RelativeLayout>
+        
+
+
+        
+
+
+        
+    </LinearLayout>
+        
+
+</RelativeLayout>

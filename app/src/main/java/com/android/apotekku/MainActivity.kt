@@ -7,7 +7,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.android.apotekku.activity.LoginActivity
+import com.android.apotekku.activity.MasukActivity
 import com.android.apotekku.databinding.ActivityMainBinding
 import com.android.apotekku.fragment.AkunFragment
 import com.android.apotekku.fragment.HomeFragment
@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
                         summonFragment(2, fragmentAkun)
                         true
                     } else{
-                        startActivity(Intent(this, LoginActivity::class.java))
+                        startActivity(Intent(this, MasukActivity::class.java))
                         true
                     }
 
