@@ -1,5 +1,6 @@
 package com.android.apotekku.app
 
+import com.android.apotekku.model.ToastHandler
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.Field
@@ -15,13 +16,12 @@ interface ApiService {
         @Field("email") email: String,
         //@Field("nomor") nomor: String,
         @Field("password") password: String
-    ):Call<ResponseBody>
+    ):Call<ToastHandler>
 
+    @FormUrlEncoded
     @POST("login")
     fun login(
-        @Field("name") nama: String,
         @Field("email") email: String,
-        //@Field("nomor") nomor: String,
         @Field("password") password: String
-    ):Call<ResponseBody>
+    ):Call<ToastHandler>
 }

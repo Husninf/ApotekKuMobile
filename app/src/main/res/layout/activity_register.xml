@@ -268,6 +268,13 @@
 
         
     </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/pb"
+        android:layout_centerInParent="true"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
         
 
 </RelativeLayout>
