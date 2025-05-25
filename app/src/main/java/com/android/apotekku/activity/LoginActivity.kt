@@ -61,6 +61,12 @@ class LoginActivity : AppCompatActivity() {
                 if (merespon.success == 1){
                     //menangani ketika berhasil
                     x.setStatusLogin(true)
+                    //send data to sharedprefs
+                    x.setUser(merespon.user)
+                    //x.setString(x.nama, merespon.user.name)
+                    //x.setString(x.phone, merespon.user.phone)
+                    //x.setString(x.email, merespon.user.email)
+
                     val pindah = Intent(this@LoginActivity, MainActivity::class.java)
                     //destroy activity agar tidak bisa kembali ke login activity
                     pindah.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)

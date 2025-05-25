@@ -14,7 +14,7 @@ interface ApiService {
     fun register(
         @Field("name") nama: String,
         @Field("email") email: String,
-        //@Field("nomor") nomor: String,
+        @Field("phone") nomor: String,
         @Field("password") password: String
     ):Call<ToastHandler>
 

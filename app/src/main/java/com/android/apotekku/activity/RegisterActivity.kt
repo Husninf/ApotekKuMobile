@@ -52,14 +52,14 @@ class RegisterActivity : AppCompatActivity() {
 
         val namaLengkap = binding.etNamaLengkap.text.toString()
         val email = binding.etEmail.text.toString()
-        val nomorTelepon = binding.etNomor.text.toString() // Perhatikan ini belum dipanggil ke API
+        val nomorTelepon = binding.etNomor.text.toString() // Perhatikan ini  dipanggil ke API
         val password = binding.etPassword.text.toString()
 
         //summon progress bar
         val progressBar = binding.pb
         //menampilkan progress bar
         progressBar.visibility = View.VISIBLE
-        ApiConfig.instanceRetrofit.register(namaLengkap, email, password).enqueue(object : Callback<ToastHandler>{
+        ApiConfig.instanceRetrofit.register(namaLengkap, email, nomorTelepon, password).enqueue(object : Callback<ToastHandler>{
             override fun onResponse(call: Call<ToastHandler>, response: Response<ToastHandler>) {
                 progressBar.visibility = View.GONE
                 val merespon = response.body()!!
@@ -77,8 +77,6 @@ class RegisterActivity : AppCompatActivity() {
                 }else{
                     //menangani ketika gagal
                     Toast.makeText(this@RegisterActivity,merespon.message, Toast.LENGTH_SHORT).show()
-
-
                 }
             }
 
